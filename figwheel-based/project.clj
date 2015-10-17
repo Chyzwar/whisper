@@ -10,14 +10,9 @@
                  [sablono "0.3.6"]
                  [org.omcljs/om "0.9.0"]]
   
-  
-  :bower-dependencies [[bootstrap "2.3.1"]
-                       [font-awesome "4.4.0"]]
-  
   :plugins [[lein-cljsbuild "1.1.0"]
-            [lein-figwheel "0.4.1"]
-            [lein-bower "0.5.1"]]
-  
+            [lein-npm "0.6.1"]]
+    
   :source-paths ["src"]
   
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]
@@ -41,38 +36,24 @@
                                    :pretty-print false}}]}
   
   :figwheel {
-             ;; :http-server-root "public" ;; default and assumes "resources" 
-             ;; :server-port 3449 ;; default
-             ;; :server-ip "127.0.0.1" 
+             ;; default and assumes "resources" 
+             :http-server-root "public"
              
-             :css-dirs ["resources/public/css"] ;; watch and update CSS
+             ;; dev server port
+             :server-port 3449
+              
+             ;; watch and update CSS
+             :css-dirs ["resources/public/css"] 
              
              ;; Start an nREPL server into the running figwheel process
-             ;; :nrepl-port 7888
-             
-             ;; Server Ring Handler (optional)
-             ;; if you want to embed a ring handler into the figwheel http-kit
-             ;; server, this is for simple ring servers, if this
-             ;; doesn't work for you just run your own server :)
-             ;; :ring-handler hello_world.server/handler
-             
-             ;; To be able to open files in your editor from the heads up display
-             ;; you will need to put a script on your path.
-             ;; that script will have to take a file path and a line number
-             ;; ie. in  ~/bin/myfile-opener
-             ;; #! /bin/sh
-             ;; emacsclient -n +$2 $1
-             ;;
-             ;; :open-file-command "myfile-opener"
-             
-             ;; if you want to disable the REPL
-             ;; :repl false
-             
-             ;; to configure a different figwheel logfile path
-             ;; :server-logfile "tmp/logs/figwheel-logfile.log" 
+             :nrepl-port 7888
              }
-  :bower {
-          ;; define bower installation directory
-          :directory "lib/bower"
-          })
+  
+  :npm {
+        ;; root folder for installing npm modules
+        :root "lib/npm"
+        
+        ;;list npm dependencies
+        :dependencies [[font-awesome "4.4.0"]
+                       [jquery "2.1.4"]]})
 

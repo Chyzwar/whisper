@@ -1,0 +1,3 @@
+[submodule "figwheel-based/lib/submodules/bootstrap"]
+	path = figwheel-based/lib/submodules/bootstrap
+	url = https://github.com/twbs/bootstrap.git

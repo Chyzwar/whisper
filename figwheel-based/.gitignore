@@ -2,7 +2,7 @@
 figwheel_server.log
 pom.xml
 *jar
-/lib/bower
+/lib/npm
 /classes/
 /out/
 /target/
