@@ -1,0 +1,545 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"po",
+				"power_search	(project.clj)"
+			],
+			[
+				"su",
+				"sublime-settings"
+			],
+			[
+				"s",
+				"sublime_text/"
+			],
+			[
+				"op",
+				"optFilters"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"user",
+				"users"
+			],
+			[
+				"e",
+				"echo"
+			],
+			[
+				"vim",
+				"vimrc"
+			],
+			[
+				"ap",
+				"apt-get"
+			],
+			[
+				"in",
+				"install"
+			],
+			[
+				"liquid",
+				"liquidprompt"
+			],
+			[
+				"un",
+				"unstable"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pare",
+				"Paredit: Run Tests"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Linter sett",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"repl clo",
+				"SublimeREPL: Clojure"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ai",
+				"Auto indent"
+			],
+			[
+				"inde",
+				"Auto indent"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: Enable Package"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"remoc",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"kee",
+				"Git Conflict Resolver: Keep Ours"
+			],
+			[
+				"mard",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mardow",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"marks",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"set shel",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"syntax she",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"rep cloju",
+				"SublimeREPL: Clojure"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"set syn sh",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"set synt she",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"set shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"packa remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"set synta she",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"lara",
+				"Laravel Generate: Migration"
+			],
+			[
+				"git flow",
+				"Git-flow: Feature Start"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"git flo",
+				"Git-flow: Feature Finish"
+			],
+			[
+				"remoce",
+				"Package Control: Remove Package"
+			],
+			[
+				"git dif",
+				"Git: Diff All Files"
+			],
+			[
+				"git",
+				"Git: Graph All"
+			],
+			[
+				"set syntax she",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"set synta sh",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntaxshe",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"set syn she",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"previ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 548.0
+	},
+	"console":
+	{
+		"height": 473.0,
+		"history":
+		[
+			"clear()",
+			"clear",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/raziel/MyProjects/whisper"
+	],
+	"file_history":
+	[
+		"/home/raziel/MyProjects/Learning-Fields/Python/InterviewQuestions/fizz_buzz.py",
+		"/home/raziel/MyProjects/Learning-Fields/Python/InterviewQuestions/permutation_pointpy",
+		"/home/raziel/MyProjects/power-search/power-search/target/unpacked/repl-connect.js",
+		"/home/raziel/MyProjects/power-search/power-search/.gitignore",
+		"/home/raziel/MyProjects/power-search/power-search/target/unpacked/repl-page.html",
+		"/home/raziel/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/raziel/.config/sublime-text-3/Packages/lispindent/Default.sublime-keymap",
+		"/home/raziel/.config/sublime-text-3/Packages/lispindent/lispindent.sublime-settings",
+		"/home/raziel/.config/sublime-text-3/Packages/User/lispindent.sublime-settings",
+		"/home/raziel/MyProjects/power-search/power-search/package.json",
+		"/home/raziel/MyProjects/Learning-Fields/Python/CodingTests/Geometry/find_point.py",
+		"/home/raziel/MyProjects/Learning-Fields/Python/IndustrialProgramming/basics/default.py",
+		"/home/raziel/.config/sublime-text-3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/home/raziel/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/raziel/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/raziel/.config/sublime-text-3/Packages/SublimeHaskell/Settings/SublimeHaskell.sublime-settings",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/test.bash",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/runcom/.bashrc",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/setup/shell-install.bash",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/git/.gitconfig",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/system/.function",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/dev/.java",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/setup/system-install.bash",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/system/.alias",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/git/.git-autocomplete.bash",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/sublime/Preferences.sublime-settings",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/sublime/SublimeLinter.sublime-settings",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/setup/sublime-install.bash",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/dev/.rvm",
+		"/home/raziel/.config/sublime-text-3/Packages/User/JsFormat.sublime-settings",
+		"/home/raziel/.config/sublime-text-3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/home/raziel/ETLFactory/workbench/app/controllers/InterestedPartiesController.php",
+		"/home/raziel/ETLFactory/workbench/src/scripts/app.js",
+		"/home/raziel/ETLFactory/workbench/dev.md",
+		"/home/raziel/.config/sublime-text-3/Packages/SublimeGit/SublimeGit.sublime-settings",
+		"/home/raziel/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/raziel/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/home/raziel/ETLFactory/workbench/app/database/migrations/2015_05_07_151743_add_is_blocked_to_users_table.php",
+		"/home/raziel/ETLFactory/workbench/bootstrap/start.php",
+		"/home/raziel/ETLFactory/workbench/composer.json",
+		"/home/raziel/.cache/.fr-rRHo2n/SublimeGit.sublime-settings",
+		"/home/raziel/.config/sublime-text-3/Packages/SublimeGit/Default.sublime-keymap",
+		"/home/raziel/.config/sublime-text-3/Packages/User/SublimeGit.sublime-settings",
+		"/home/raziel/ETLFactory/workbench/app/controllers/ApiUsersController.php",
+		"/home/raziel/ETLFactory/workbench/gulpfile.js",
+		"/home/raziel/.config/sublime-text-3/Packages/User/phpfmt.sublime-settings",
+		"/home/raziel/ETLFactory/etlf-dtp-20150506.sql",
+		"/home/raziel/CaliberProjects/Tarzan/app/models/Activities/Activities/ActivityUpdate.php",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/setup/vim-install.bash",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/dotfiles",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/runcom/.inputrc",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/dev/.virtualenv",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/system/.fasd.bash",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/system/.prompt",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/runcom/.bash_profile",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/system/.env",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/system/.completion.bash",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/system/.path",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/system/.env.bash",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/dev/.nvm",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/setup/dotfiles-install.bash",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/system-install.bash",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/vim/vundle.vim",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/README.md",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/vim/vimrc",
+		"/home/raziel/MyProjects/dotfiles-ubuntu/sublime/Preferences.sublime-settings~"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<project>",
+			"/home/raziel/ETLFactory/workbench",
+			"/home/raziel/ETLFactory/workbench/app"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"read-property",
+			"true",
+			"react",
+			"autoc",
+			"false",
+			"add",
+			"..* ",
+			"wifi",
+			"docker",
+			"dock",
+			"chrome",
+			"-g",
+			"shel",
+			"shell",
+			"$opts['filter']",
+			"$opts['filters']",
+			"opts",
+			"gaze",
+			"serve-site",
+			"serve",
+			"gaze",
+			"musta",
+			"gaze",
+			"runSequence",
+			"user-edit.html",
+			"alter",
+			"alterna",
+			"row",
+			"homestead",
+			"q",
+			"FeedRunTableSeeder",
+			"FeedTableSeeder",
+			"brow",
+			"gaz",
+			"fas",
+			"fasd",
+			"../sublime/",
+			"user",
+			"$VIM",
+			"Plu",
+			"sublime"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 350.0
+	},
+	"output.git-flow-feature-finish":
+	{
+		"height": 381.0
+	},
+	"output.git-flow-feature-start":
+	{
+		"height": 521.0
+	},
+	"output.haskell_sublime_load":
+	{
+		"height": 394.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 342.0
+	},
+	"pinned_build_system": "",
+	"project": "whisper.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"route",
+				"app/routes.php"
+			],
+			[
+				"systemscontroller",
+				"app/controllers/SystemsController.php"
+			],
+			[
+				"apigroupscontroller",
+				"app/controllers/ApiGroupsController.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/ETLFactory/sublime-projects/workbench-back.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 400.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
