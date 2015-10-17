@@ -11,15 +11,17 @@
                  [org.omcljs/om "0.9.0"]]
   
   :plugins [[lein-cljsbuild "1.1.0"]
-            [lein-npm "0.6.1"]]
-    
-  :source-paths ["src"]
+            [lein-figwheel "0.4.1"]
+            [lein-npm "0.6.1"]
+            [lein-shell "0.4.1"]]
+  
+  :source-paths ["src/cljs"]
   
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]
   
   :cljsbuild {
               :builds [{:id "dev"
-                        :source-paths ["src"]
+                        :source-paths ["src/cljs"]
                         
                         :figwheel {:on-jsload "whisper.core/on-js-reload" }
                         
@@ -29,7 +31,7 @@
                                    :output-dir "resources/public/js/compiled/out"
                                    :source-map-timestamp true }}
                        {:id "min"
-                        :source-paths ["src"]
+                        :source-paths ["src/whisper"]
                         :compiler {:output-to "resources/public/js/compiled/whisper.js"
                                    :main whisper.core
                                    :optimizations :advanced
@@ -41,9 +43,9 @@
              
              ;; dev server port
              :server-port 3449
-              
+             
              ;; watch and update CSS
-             :css-dirs ["resources/public/css"] 
+             :css-dirs ["resources/public"] 
              
              ;; Start an nREPL server into the running figwheel process
              :nrepl-port 7888
@@ -51,9 +53,18 @@
   
   :npm {
         ;; root folder for installing npm modules
-        :root "lib/npm"
+        :root "lib"
+        
+        :package {:scripts
+                   ;;run browserify on js resources
+                   {:build "
+                           browserify --debug ../src/js/main.js |
+                           uglifyjs -mc > ../resources/public/js/compiled/bundle.js" }}
         
         ;;list npm dependencies
         :dependencies [[font-awesome "4.4.0"]
-                       [jquery "2.1.4"]]})
+                       [jquery "2.1.4"]
+                       [browserify "11.2.0"]
+                       [reactify "^0.5.1"] 
+                       [uglify-js "^2.5.0"]]})
 
