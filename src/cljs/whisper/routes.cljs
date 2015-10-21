@@ -6,36 +6,38 @@
             [goog.history.EventType :as EventType])
   (:import goog.History))
 
-(secretary/set-config! :prefix "#")
 
+(def application
+  (js/document.getElementById "application"))
+
+(defn set-html! [el content]
+  (aset el "innerHTML" content))
 
 (defn widget [data owner]
   (reify
     om/IRender
     (render [this]
-      (dom/h1 nil (:text data)))))
+            (dom/h1 nil (:text data)))))
+
+
+(defroute main-page "/" []
+  (om/root widget {:text "Main Page"}
+           {:target (. js/document (getElementById "app"))})
+  
+  (js/console.log (str "U chuja main page")))
 
 
 (defroute login-page "/login" []
-              (om/root widget {:text "Login Page"}
-                       {:target (. js/document (getElementById "app"))})
-              (js/console.log (str "U chuja")))
+  (om/root widget {:text "Login Page"}
+           {:target (. js/document (getElementById "app"))})
+  (js/console.log (str "U chuja")))
 
-(defroute main-page "/" []
-              (om/root widget {:text "Main Page"}
-                       {:target (. js/document (getElementById "app"))})
-              
-              (js/console.log (str "U chuja main page")))
 
-(let [history (History.)
-      navigation EventType/NAVIGATE]
-  (goog.events/listen history
-                     navigation
-                     #(-> % .-token secretary/dispatch!))
-  (doto history (.setEnabled true)))
+;; Catch all
+(defroute wildcard "*" []
+  (set-html! application "<h1>LOL! YOU LOST!</h1>"))
 
-(defn main []
-  (-> js/document
-      .-location
-      (set! "#/")))
-(main)
+;; Quick and dirty history configuration.
+(let [h (History.)]
+  (goog.events/listen h EventType/NAVIGATE #(secretary/uri-dispatcher (.-token %)))
+  (doto h (.setEnabled true)))

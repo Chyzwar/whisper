@@ -10,7 +10,7 @@
                  [sablono "0.3.6"]
                  [prismatic/om-tools "0.3.12"]
                  [org.omcljs/om "0.9.0"]
-                 [secretary "1.2.1"]]
+                 [secretary "2.0.0.1-2b0752"]]
   
   :plugins [[lein-cljsbuild "1.1.0"]
             [lein-figwheel "0.4.1"]
@@ -44,7 +44,7 @@
              :http-server-root "public"
              
              ;; dev server port
-             :server-port 3449
+             :server-port 3449  
              
              ;; watch and update CSS
              :css-dirs ["resources/public"] 
