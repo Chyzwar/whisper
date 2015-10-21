@@ -10,7 +10,8 @@
                  [sablono "0.3.6"]
                  [prismatic/om-tools "0.3.12"]
                  [org.omcljs/om "0.9.0"]
-                 [secretary "2.0.0.1-2b0752"]]
+                 [secretary "1.2.3"]
+                 [venantius/accountant "0.1.2"]]
   
   :plugins [[lein-cljsbuild "1.1.0"]
             [lein-figwheel "0.4.1"]
