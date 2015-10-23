@@ -8,12 +8,14 @@
 (accountant/configure-navigation!)
 
 (defroute main-page "/" []
-  (om/root chat/chat-page {}
+  (om/root chat/chat-page
+           {}
            {:target (. js/document (getElementById "app"))}))
 
 
 (defroute login-page "/login" []
-  (om/root login/login-page {}
+  (om/root login/login-page
+           {}
            {:target (. js/document (getElementById "app"))}))
 
 
@@ -24,3 +26,4 @@
 (defn on-js-reload []
   (accountant/configure-navigation!))
 
+(accountant/navigate! "/login")

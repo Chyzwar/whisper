@@ -25,9 +25,9 @@
   :cljsbuild {
               :builds [{:id "dev"
                         :source-paths ["src/cljs"]
-                        
+
                         :figwheel {:on-jsload "whisper.routes/on-js-reload" }
-                        
+
                         :compiler {:main whisper.routes
                                    :asset-path "js/compiled/out"
                                    :output-to "resources/public/js/compiled/whisper.js"
@@ -39,25 +39,25 @@
                                    :main whisper.core
                                    :optimizations :advanced
                                    :pretty-print false}}]}
-  
+
   :figwheel {
-             ;; default and assumes "resources" 
+             ;; default and assumes "resources"
              :http-server-root "public"
-             
+
              ;; dev server port
-             :server-port 3449  
-             
+             :server-port 3449
+
              ;; watch and update CSS
-             :css-dirs ["resources/public"] 
-             
+             :css-dirs ["resources/public"]
+
              ;; Start an nREPL server into the running figwheel process
              :nrepl-port 7888
              }
-  
+
   :npm {
         ;; root folder for installing npm modules
         :root "lib"
-        
+
         :package {:scripts
                   ;;run browserify on js resources
                   {
@@ -65,17 +65,16 @@
                     :build "
                           browserify --debug ../src/js/main.js |
                           uglifyjs -mc > ../resources/public/js/compiled/bundle.min.js" 
-                     
+
                     ;; lein npm run watch
-                    :watch "                      
+                    :watch "
                           watchify ../src/js/main.js -o ../resources/public/js/compiled/bundle.js -d" }}
-        
+
         ;;list npm dependencies
         :dependencies [[font-awesome "4.4.0"]
                        [jquery "2.1.4"]
                        [browserify "11.2.0"]
-                       [reactify "^0.5.1"] 
+                       [reactify "^0.5.1"]
                        [uglify-js "^2.5.0"]
-                       [watchify "3.4.0"]
-                       [app-module-path "1.0.4"]]})
+                       [watchify "3.4.0"]]})
 
