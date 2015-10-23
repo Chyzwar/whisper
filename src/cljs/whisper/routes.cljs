@@ -1,31 +1,26 @@
 (ns ^:figwheel-always whisper.routes
   (:require [om.core :as om :include-macros true]
-            [om.dom :as dom :include-macros true]
             [secretary.core :as sec :refer-macros [defroute]]
-            [accountant.core :as accountant]))
+            [accountant.core :as accountant]
+            [whisper.pages.login :as login]
+            [whisper.pages.chat :as chat]))
 
 (accountant/configure-navigation!)
 
-(defn widget [data owner]
-  (reify
-    om/IRender
-    (render [this]
-            (dom/h1 nil (:text data)))))
-
 (defroute main-page "/" []
-  (om/root widget {:text "Main Page"}
-           {:target (. js/document (getElementById "app"))})
-  
-  (js/console.log (str "U chuja main page")))
+  (om/root chat/chat-page {}
+           {:target (. js/document (getElementById "app"))}))
 
 
 (defroute login-page "/login" []
-  (om/root widget {:text "Login Page"}
-           {:target (. js/document (getElementById "app"))})
-  (js/console.log (str "U chuja")))
+  (om/root login/login-page {}
+           {:target (. js/document (getElementById "app"))}))
 
 
 (defroute wildcard "*" []
   (accountant/navigate! "/"))
 
-(accountant/navigate! "/login")
+
+(defn on-js-reload []
+  (accountant/configure-navigation!))
+

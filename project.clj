@@ -26,9 +26,9 @@
               :builds [{:id "dev"
                         :source-paths ["src/cljs"]
                         
-                        :figwheel {:on-jsload "whisper.core/on-js-reload" }
+                        :figwheel {:on-jsload "whisper.routes/on-js-reload" }
                         
-                        :compiler {:main whisper.core
+                        :compiler {:main whisper.routes
                                    :asset-path "js/compiled/out"
                                    :output-to "resources/public/js/compiled/whisper.js"
                                    :output-dir "resources/public/js/compiled/out"
