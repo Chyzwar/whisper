@@ -3,7 +3,7 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  
+
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/clojurescript "1.7.122"]
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
@@ -12,16 +12,16 @@
                  [org.omcljs/om "0.9.0"]
                  [secretary "1.2.3"]
                  [venantius/accountant "0.1.2"]]
-  
+
   :plugins [[lein-cljsbuild "1.1.0"]
             [lein-figwheel "0.4.1"]
             [lein-npm "0.6.1"]
-            [lein-shell "0.4.1"]]
-  
+            [lein-sass "0.3.7"]]
+
   :source-paths ["src/cljs"]
-  
+
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]
-  
+
   :cljsbuild {
               :builds [{:id "dev"
                         :source-paths ["src/cljs"]
@@ -53,6 +53,13 @@
              ;; Start an nREPL server into the running figwheel process
              :nrepl-port 7888
              }
+  :sass {
+         :src "src/scss"
+         :output-directory "resources/public/css"
+         :delete-output-dir true
+         :source-maps true
+         :style :nested
+         }
 
   :npm {
         ;; root folder for installing npm modules
